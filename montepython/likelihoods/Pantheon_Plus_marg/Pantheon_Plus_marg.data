@@ -1,0 +1,20 @@
+# Pantheon_Plus likelihood with analytical marginalization
+# from arXiv:2202.04077
+# based on former Pantheon likelihood by Rodrigo von Martens
+# which was based on the JLA likelihood
+# This is the Montepython adaptation of the lkl written for cobaya sampler 
+# available at https://github.com/CobayaSampler/cobaya
+
+#author: Anton Chudaykin
+
+Pantheon_Plus_marg.data_directory = os.path.join(data.path['data'], 'Pantheon_plus_marg')
+Pantheon_Plus_marg.settings       = 'pantheon_plus.dataset'
+Pantheon_Plus_marg.conflicting_experiments = ['JLA_simple', 'JLA','Pantheon','Pantheon_Plus_SH0ES','Pantheon_Plus','Union3','DESY5']
+
+Pantheon_Plus_marg.z_min = 0.01
+
+# Set to False for analytical marginalization
+Pantheon_Plus_marg.use_abs_mag = False
+# If set to True, add the nuisance parameter
+#Pantheon_Plus_marg.use_nuisance = ['M']
+

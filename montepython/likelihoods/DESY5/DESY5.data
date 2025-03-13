@@ -1,0 +1,17 @@
+# DESY5 likelihood with analytical marginalization
+# from arXiv:2401.02929
+# based on former Pantheon likelihood by Rodrigo von Martens
+# which was based on the JLA likelihood
+# This is the Montepython adaptation of the lkl written for cobaya sampler 
+# available at https://github.com/CobayaSampler/cobaya
+
+#author: Anton Chudaykin
+
+DESY5.data_directory = os.path.join(data.path['data'], 'DESY5')
+DESY5.settings       = 'config.dataset'
+DESY5.conflicting_experiments = ['JLA_simple', 'JLA','Pantheon','Pantheon_Plus_SH0ES','Pantheon_Plus','Pantheon_Plus_marg','Union3']
+
+# Set to False for analytical marginalization
+DESY5.use_abs_mag = False
+# If set to True, add the nuisance parameter
+#DESY5.use_nuisance = ['M']

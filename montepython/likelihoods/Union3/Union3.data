@@ -1,0 +1,17 @@
+# Union3 likelihood with analytical marginalization
+# from arXiv:2311.12098
+# based on former Pantheon likelihood by Rodrigo von Martens
+# which was based on the JLA likelihood
+# This is the Montepython adaptation of the lkl written for cobaya sampler 
+# available at https://github.com/CobayaSampler/cobaya
+
+#author: Anton Chudaykin
+
+Union3.data_directory = os.path.join(data.path['data'], 'Union3')
+Union3.settings       = 'full_long.dataset'
+Union3.conflicting_experiments = ['JLA_simple', 'JLA','Pantheon','Pantheon_Plus_SH0ES','Pantheon_Plus','Pantheon_Plus_marg','DESY5']
+
+# Set to False for analytical marginalization
+Union3.use_abs_mag = False
+# If set to True, add the nuisance parameter
+#Union3.use_nuisance = ['M']
