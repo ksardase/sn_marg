@@ -4,6 +4,10 @@
 
 This repo contains the SN Ia likelihoods for the MCMC sampler [Montepython](https://github.com/brinckmann/montepython_public). These likelihoods support analytical marginalization over the SN absolute magnitude. The approach is similar to that used in the SN Ia likelihoods of [Cobaya](https://github.com/CobayaSampler/cobaya).
 
+The SN Ia likelihoods were first used in the paper:
+
+* [*Modified gravity constraints with Planck ISW-lensing bispectrum*](https://arxiv.org/abs/2503.09893)
+  
 The repo includes: 
 
 * The PantheonPlus sample ([arXiv:2202.04077](https://arxiv.org/abs/2202.04077))
@@ -12,4 +16,4 @@ The repo includes:
   
 # Using the code
 
-You can use the sn_marg freely, provided that in your publications you cite [arXiv:2503.XXXXX](https://arxiv.org/abs/2503.XXXXX).
+You can use the sn_marg freely, provided that in your publications you cite [arXiv:2503.09893](https://arxiv.org/abs/2503.09893).
